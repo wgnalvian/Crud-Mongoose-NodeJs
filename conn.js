@@ -1,5 +1,5 @@
 const mongoose = require('mongoose')
-mongoose.connect('mongodb+srv://alvian:1234@cluster0.zjzzz.mongodb.net/test?authSource=admin&replicaSet=atlas-88rdg1-shard-0&readPreference=primary&appname=MongoDB%20Compass&ssl=true', { useNewUrlParser : true, useUnifiedTopology : true})
+mongoose.connect('<Your Server Mongo>', { useNewUrlParser : true, useUnifiedTopology : true})
 
 const db = mongoose.connection
 db.on('error', console.error.bind(console, 'connection error : '))
